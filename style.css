@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-black: #21243d;
+  --color-pink: #ff6464;
+  --color-white: #ffffff;
+  --color-blue: #edf7fa;
+  --color-lightblue: #00a8cc;
+  --color-border: #e0e0e0;
+  --color-batch: #142850;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-lightblue);
+}
+
+a:hover {
+  color: var(--color-pink);
+}
+
+.spacer {
+  margin-bottom: 40px;
+}
+
+.batch{
+  background: var(--color-batch);
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+/* navbar */
+
+.container-padding {
+  padding: 30px 160px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: bold;
+}
+
+/* Header image */
+
+header {
+  display: flex;
+  gap: 30px;
+}
+
+.heading-container {
+  max-width: 60%;
+}
+.header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-container {
+  height: 243px;
+  width: 243px;
+  overflow: hidden;
+  border-radius: 100%;
+  box-shadow: -5px 6px 0 0 var(--color-blue);
+}
+.image-container > img {
+  width: 100%;
+}
+
+/* Button */
+
+button {
+  background: var(--color-pink);
+  padding: 10px 20px;
+  border: none;
+  /* border-radius: 10px; */
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Content Box */
+
+.recent {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.post {
+  background: var(--color-blue);
+  /* display: flex; */
+}
+
+
+.post-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-tab {
+  display: flex;
+  gap: 20px;
+}
+
+.view{
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  padding: 0 25px;
+}
+
+/* Featured works */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* dashboard */
+.dashboard {
+  display: flex;
+  gap: 25px;
+  border-bottom: solid 1px var(--color-border);
+  padding-bottom: 5px;
+}
+
+.dashboard img {
+  width: 250px;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.dashboard > .dash-plates > h2 {
+  margin-bottom: 10px;
+}
+
+.dashboard > .dash-plates > .dates {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.dashboard > .dash-plates > .dates > h5,
+h6 {
+  margin-bottom: 10px;
+}
+
+
+/* illustration*/
+
+.illustration {
+  display: flex;
+  gap: 25px;
+  border-bottom: solid 1px var(--color-border);
+  padding-bottom: 5px;
+}
+
+.illustration img {
+  width: 250px;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.illustration > .ill-plates > h2 {
+  margin-bottom: 10px;
+}
+
+.illustration > .ill-plates > .dates {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.illustration > .ill-plates > .dates > h5,
+h6 {
+  margin-bottom: 10px;
+}
+
+/* Typography */
+
+.typography {
+  display: flex;
+  gap: 25px;
+  border-bottom: solid 1px var(--color-border);
+  padding-bottom: 5px;
+}
+
+.typography img {
+  width: 250px;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.typography > .typo-plates > h2 {
+  margin-bottom: 10px;
+}
+
+.typography > .typo-plates > .dates {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.typography > .typo-plates > .dates > h5,
+h6 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+.social-networks {
+  margin-top: 100px;
+}
+.social-networks > .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.social-networks img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-networks > .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* Media query */
+
+@media (max-width : 950px){
+  .container-padding{
+    padding: 30px 100px;
+  }
+}
+
+@media (max-width : 865px){
+  .post > .content-tab{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-padding{
+    padding: 30px 130px;
+  }
+  .recent{
+    text-align: center;
+  }
+  .view{
+    text-align: center;
+  }
+}
+
+@media (max-width : 785px) {
+  .container-padding{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 100px;
+  }
+
+  #btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@media (max-width : 750px) {
+  .container-padding{
+    padding: 30px 70px;
+  }
+}

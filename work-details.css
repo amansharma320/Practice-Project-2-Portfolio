@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-black: #21243d;
+  --color-pink: #ff6464;
+  --color-white: #ffffff;
+  --color-blue: #edf7fa;
+  --color-lightblue: #00a8cc;
+  --color-border: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-lightblue);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+a:hover {
+  color: var(--color-pink);
+}
+
+.spacer {
+  margin-bottom: 50px;
+}
+
+/* navbar */
+
+/* nav{
+  display: none;
+} */
+
+.nav-toggle{
+  display: none;
+}
+
+.nav-toggle-label{
+  float: right;
+  /* margin: 1.5rem; */
+  font-size: 20px;
+  display: none;
+}
+
+/* .nav-toggle-label, .nav-toggle:checked ~ nav {
+  display: block;
+} */
+
+.container-padding1 {
+  padding: 30px 90px;
+}
+
+.container-padding2 {
+  padding: 30px 250px;
+}
+
+nav > ul >li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  width: 100%;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: bold;
+}
+
+/* Container1 */
+
+.container1 img {
+  width: 680px;
+  height: 460px;
+  margin-top: 40px;
+}
+
+
+
+/* Media query for navbar */
+
+@media only screen and (max-width: 800px) {
+  
+  
+  .nav-toggle-label{
+    display: block;
+    cursor: pointer;
+  }
+
+}
